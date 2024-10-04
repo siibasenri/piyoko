@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - coin
+  - Heart
+  - ClearPoint
+  - Typhoon
+  - Thunder
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: sky
+    uniqueID: 2640106597
+    locked: 0
+  - name: cloud
+    uniqueID: 3650223157
+    locked: 0
+  - name: forest
+    uniqueID: 2898667989
+    locked: 0
+  - name: floar
+    uniqueID: 1566201601
+    locked: 0
+  - name: enemy
+    uniqueID: 3841619687
+    locked: 0
+  - name: player
+    uniqueID: 3845253477
+    locked: 0
+  - name: grass
+    uniqueID: 2252325793
+    locked: 0
