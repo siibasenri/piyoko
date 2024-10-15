@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//雷が発生するエリアのクラス
 public class ThunderAreaScript : MonoBehaviour
 {
     bool isIntoPlayer,isLight;
@@ -9,7 +10,8 @@ public class ThunderAreaScript : MonoBehaviour
     GameObject lightning;
     Collider2D col;
     float wide,fallTime,fallPoint;
-    // Start is called before the first frame update
+
+    //初期化
     void Start()
     {
         fallTime = 0;
@@ -19,7 +21,7 @@ public class ThunderAreaScript : MonoBehaviour
         wide = col.bounds.size.x;
     }
 
-    // Update is called once per frame
+    //一定時間ごとに雷を発生させる
     void Update()
     {
         if (isIntoPlayer)
@@ -28,6 +30,7 @@ public class ThunderAreaScript : MonoBehaviour
             {
                 fallPoint = Random.Range(transform.position.x - wide * 0.5f, transform.position.x + wide * 0.5f);
             }
+
             if (fallTime > 2 && fallTime < 4)
             {
                 if (!isLight)
@@ -41,6 +44,7 @@ public class ThunderAreaScript : MonoBehaviour
                     lightning.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, sin * 0.5f);
                 }
             }
+
             if (fallTime > 4)
             {
                 Destroy(lightning);

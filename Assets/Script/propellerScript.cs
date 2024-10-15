@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//飛行機のプロペラに関するクラス
 public class propellerScript : MonoBehaviour
 {
     public int rotateFocus;

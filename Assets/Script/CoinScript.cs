@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+//コインに関するクラス
 public class CoinScript : MonoBehaviour
 {
     AudioSource se;
-    float sin;
+    float sin; //浮遊時の演出用のサイン値
 
     void Start()
     {

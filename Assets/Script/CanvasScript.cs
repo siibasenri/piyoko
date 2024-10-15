@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
+//ゲームの進行を管理するクラス
 public class CanvasScript : MonoBehaviour
 {
     public GameObject[] hearts;

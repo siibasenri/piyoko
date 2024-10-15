@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//狐の頭部分の当たり判定に関するクラス
 public class FoxHeadScript : MonoBehaviour
 {
     EdgeCollider2D Head;
@@ -14,6 +15,7 @@ public class FoxHeadScript : MonoBehaviour
         Fox = transform.parent.gameObject;
     }
 
+    //当たったのがプレイヤーだった場合、狐は倒される
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.name == "Player")

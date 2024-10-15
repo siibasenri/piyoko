@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//背景の雲を動かすクラス
 public class CloudScript : MonoBehaviour
 {
     GameObject Camera;
     float beforepos, afterpos;
 
 
-    // Start is called before the first frame update
+    //カメラの位置を把握する
     void Start()
     {
         Camera = GameObject.Find("Main Camera");
 
         beforepos = Camera.transform.position.x;
-        
-
     }
 
-    // Update is called once per frame
+    //遠くにある雲のように演出するため、少しだけカメラと同じ方向に動く
     void Update()
     {
 

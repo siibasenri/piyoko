@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//雷に関するクラス
 public class ThunderScript : MonoBehaviour
 {
     SpriteRenderer sp;
-    float sin,time,dis;
+    float sin,time;
     Collider2D col;
     AudioSource se;
 
-    // Start is called before the first frame update
+    // 初期化
     void Start()
     {
         se = GetComponent<AudioSource>();
@@ -18,7 +19,7 @@ public class ThunderScript : MonoBehaviour
         se.Play();
     }
 
-    // Update is called once per frame
+    //点滅したあと、2秒後に破壊
     void Update()
     {
         time += Time.deltaTime;

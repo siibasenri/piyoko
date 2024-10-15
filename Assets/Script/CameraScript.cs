@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+//カメラの動作に関するクラス
 public class CameraScript : MonoBehaviour
 {
-    GameObject Player;
-    public bool auto;
-    int endPos, moveTime;
+    GameObject Player; //プレイヤー
+    public bool auto; //強制横スクロールか否か
+    int endPos, moveTime; //カメラのゴール位置、移動時間
+
 
     void Start()
     {
@@ -15,12 +17,14 @@ public class CameraScript : MonoBehaviour
         endPos = 200;
         moveTime = 300;
 
+        //強制横スクロールなら、カメラを自動で移動
         if(auto)
         {
             transform.DOMoveX(endPos, moveTime);
             
         }
     }
+
 
     void Update()
     {

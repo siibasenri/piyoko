@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+//葉っぱに関するクラス
 public class ReefScript : MonoBehaviour
 {
     Rigidbody2D rg;
@@ -20,7 +21,7 @@ public class ReefScript : MonoBehaviour
         rg.AddForce(new Vector2(500 + (random * 100), 0));
     }
 
-    // Update is called once per frame
+    //回転しながら落ちていき、画面外にでたら破壊
     void Update()
     {
         transform.Rotate(0f, 0f, random);

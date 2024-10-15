@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+//ˆÚ“®°‚ÉŠÖ‚·‚éƒNƒ‰ƒX
 public class moveFloarScript : MonoBehaviour
 {
     GameObject emp;

@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//ゲーム上の障害物、演出を管理するクラス
 public class GameDirectorScript : MonoBehaviour
 {
     public GameObject[] reef,spark;
     GameObject Player;
     float reeftime,sparktime;
-    int reefKind,sparkPos,sparkKind;
+    int reefKind,sparkPos,sparkKind; //葉っぱの種類、火花の場所、火花の種類
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class GameDirectorScript : MonoBehaviour
         reeftime += Time.deltaTime;
         sparktime += Time.deltaTime;
 
+        //葉っぱを舞わせる
         if (reeftime > 1f)
         {
             reefKind = Random.Range(0, 3);
@@ -27,6 +29,7 @@ public class GameDirectorScript : MonoBehaviour
             reeftime = 0;
         }
 
+        //火花をランダム位置に発火させる
         if (sparktime > 3f)
         {
             sparkPos = Random.Range(-8, 8);

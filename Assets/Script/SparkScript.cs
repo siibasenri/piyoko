@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//火花に関するクラス
+//雷が落ちる位置の予測のために呼ばれる
 public class SparkScript : MonoBehaviour
 {
     SpriteRenderer sp;
     float time,sin;
 
-    // Start is called before the first frame update
+    //Spriteを取得
     void Start()
     {
         sp = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    //点滅して、2秒後に破壊
     void Update()
     {
         time += Time.deltaTime;

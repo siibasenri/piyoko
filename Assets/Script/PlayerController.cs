@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//プレイヤーの操作に関するクラス
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rg;
@@ -185,7 +186,6 @@ public class PlayerController : MonoBehaviour
                 {
                     StartCoroutine("Damage");
                 }
-                //Debug.Log(p.point.x + " : " + transform.position.x);
             }
         }
 

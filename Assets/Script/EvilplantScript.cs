@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//エビルプラントに関するクラス
 public class EvilplantScript : MonoBehaviour
 {
     Animator anim;
-    CircleCollider2D head;
+    CircleCollider2D head; 
     SpriteRenderer sp;
     AudioSource se;
 
     bool isDead;
-    LineRenderer linerend;
     Vector3 pos1, pos2;
 
     void Start()
@@ -40,7 +40,7 @@ public class EvilplantScript : MonoBehaviour
         Debug.DrawLine(pos1, pos2);
     }
 
-    
+    //当たり判定処理
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.name == "Player" )

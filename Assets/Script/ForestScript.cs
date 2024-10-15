@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//”wŒi‚ÌŽ÷–Ø‚ÉŠÖ‚·‚éƒNƒ‰ƒX
 public class ForestScript : MonoBehaviour
 {
     GameObject Player;
-    // Start is called before the first frame update
+    // 
     void Start()
     {
         Player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
+    // 
     void Update()
     {
+        //‰æ–Ê”ÍˆÍ“à‚È‚çƒvƒŒƒCƒ„[‚ÌˆÊ’u‚É’Ç]‚·‚é
         if (Player.transform.position.x >= -1 && Player.transform.position.x <= 199)
         {
 

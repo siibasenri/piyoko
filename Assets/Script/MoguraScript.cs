@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//ƒ‚ƒOƒ‰‚ÉŠÖ‚·‚éƒNƒ‰ƒX
 public class MoguraScript : MonoBehaviour
 {
     GameObject Player;
@@ -12,7 +13,7 @@ public class MoguraScript : MonoBehaviour
     bool isDead;
     float dis;
 
-    //‰Šú
+    //‰Šú‰»
     void Start()
     {
         Player = GameObject.Find("Player");

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//狐の挙動に関するクラス
+//狐は、伏せをした後ジャンプ移動する
 public class FoxScript : MonoBehaviour
 {
     Rigidbody2D rg;
